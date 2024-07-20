@@ -1,0 +1,78 @@
+//routes 
+ (method,path)
+//path
+    --> rootUrl/path 
+
+//method 
+ get --> read opearation 
+ post --> creating a new entity
+ put --> updating the user
+ delete --> delete the 
+
+ //express 
+ //
+ server.method(path,cb);
+ server.get('/home',(req,res) =>{
+
+ })
+
+ // write the code in express so that if my route doesn't match it will give me error 404
+
+server.use('/',()=>{
+
+} 
+
+ /student
+ /student/marks
+ /student/number
+/student1/marks
+
+//middleware 
+
+//middleware is something that has access to both req and res and use before we sent the final response
+
+//how we can use it 
+//server.get('/path',[middle1,middle1]);
+
+//issue 
+server.use('/',middleware);
+//it will match the base path 
+/student 
+/student/read
+/student/delete
+
+order 
+yes order is important because iff we use middleware after the controller then it is of no use 
+
+//status-code 
+//100-199 status code means --> server has recived your req and processing
+//200-299 --> status code means request was successfully recived,understood and processed
+//300-399 --> redirection
+//400-499--> error /client - error
+//500-599--> server error 
+
+
+//framework 
+ // make our life easy -> provide a basic platform on which we can start wiriting the code
+//express 
+//advantages 
+  // routing , middleware , template engine 
+//install express 
+//create a server 
+//routes 
+    //method --> get,post,put,delete
+    //path --> absolute ,reg 
+
+//order matter --> yes 
+//middleware --> inetrmediate function access to both req and res 
+//how to define middleware 
+ //server.get('/path',[middl1,middl2]);
+//no how to define at universal 
+server.use('/path',function);
+//note --> it should all call before we are start defining  routing 
+
+//status-code 
+//pratice of how to handle invalid routes 
+ //route 
+ //middleware 
+//change res object  
